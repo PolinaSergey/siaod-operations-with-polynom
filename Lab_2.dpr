@@ -56,7 +56,7 @@ begin
   Result:=ListHead;
 end;
 
-
+// Ввод полинома
 procedure WritePoly(Ch:Multi);
 var
   fl:boolean;
@@ -78,6 +78,7 @@ begin
   writeln;
 end;
 
+// Сравнение полиномов
 function Equality(p,q:Multi):boolean;
 var
   fl:boolean;
@@ -95,6 +96,7 @@ begin
     Result:=false;
 end;
 
+// Вычисление значения полинома
 function Meaning(p:Multi;x:integer):integer;
 var
   rez: integer;
@@ -114,6 +116,7 @@ begin
   Result:=rez;
 end;
 
+// Сложение полиномов
 procedure Add (p,q:Multi; out r:Multi);
 var
   Ch,ListHead:Multi;
@@ -169,7 +172,7 @@ begin
   r:=ListHead;
 end;
 
-
+//Удаление списка
 procedure Delete(Ch:Multi);
 var
   ListHead:Multi;
